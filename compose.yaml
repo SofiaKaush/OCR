@@ -1,0 +1,16 @@
+services:
+  declarations:
+    build: .
+    ports:
+      - "127.0.0.1:${APP_PORT:-8510}:8501"
+    environment:
+      DATA_DIR: /app/data
+      OMP_THREAD_LIMIT: "2"
+    volumes:
+      - declaration_data:/app/data
+    restart: unless-stopped
+    stop_grace_period: 30s
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  declaration_data:

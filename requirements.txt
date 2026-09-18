@@ -1,0 +1,10 @@
+streamlit==1.64.0
+pymupdf==1.26.6
+pandas==2.2.3
+numpy==2.3.5
+pydantic==2.13.5
+pytesseract==0.3.13
+pillow==12.3.0
+xlsxwriter==3.2.9
+filelock==3.32.7
+opencv-python-headless==4.13.0.92
